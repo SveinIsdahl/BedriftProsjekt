@@ -1,0 +1,34 @@
+#vskulder {
+    grid-area: vskulder;
+    background-color: whitesmoke;
+    padding-left: 15px;
+}
+
+#hskulder {
+    grid-area: hskulder;
+    background-color: rgba(235, 224, 224, 0.865);
+
+}
+
+#kropp {
+    display: grid;
+    
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 100vh 100vh;
+    
+    grid-template-areas:
+        "vskulder hskulder"
+}
+
+img {
+    position: relative;
+    width: 670px;
+   top: 10px;
+   left: 10px;
+   text-align: center;
+}
+
+p {
+    padding-left: 10px;
+}
+
