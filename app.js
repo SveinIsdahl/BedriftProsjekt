@@ -16,11 +16,11 @@ const crypto = require("crypto");
 
 // fake userdb just for testing - should be stored in db
 const userlist = {
-  1: { id: 1, username: "admin", password: umd5("1230") },
-  2: { id: 2, username: "bib1", password: umd5("1234") },
-  3: { id: 3, username: "bib2", password: umd5("1235") }
+  1: { id: 1, username: "admin", password: umd5("123") },
+  2: { id: 2, username: "user", password: umd5("1234") }
+
 };
-const _username2id = { admin: 1, bib1: 2, bib2: 3 };
+const _username2id = { admin: 1, bib1: 2};
 
 const _usersById = id => {
   return userlist[id] || { username: "none", password: "" };
