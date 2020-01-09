@@ -37,6 +37,7 @@ class HomeBar extends HTMLElement {
 
             div#menu {
               place-self:center left;
+              width: 180px;
             }
 
             div#menu ul,
