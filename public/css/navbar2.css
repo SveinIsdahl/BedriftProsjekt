@@ -1,0 +1,52 @@
+.topnav {
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  margin-left: 18vw;
+  margin-right: 18vw;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18.5px;
+  font-family: heit;
+}
+
+.topnav a:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+body {
+  background-color: white(0, 0, 0);
+}
+
+.login {
+  width: fit-content;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.login a {
+  float: left;
+  color: white;
+  font-size: 18.5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: heit;
+}
+
+.login a:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+@font-face {
+  src: url(../Fonts/Heit3.ttf);
+  font-family: heit;
+}

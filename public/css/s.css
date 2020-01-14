@@ -1,0 +1,40 @@
+body {
+  background-image: url(../Bilder/models.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 40px;
+  left: 90px;
+  font-size: 43px;
+  font-family: roboto;
+  text-align: center;
+}
+
+.text2 {
+  position: absolute;
+  top: 90px;
+  left: 70px;
+  font-size: 43px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+@font-face {
+  src: url(../Fonts/Roboto-Thin.ttf);
+  font-family: roboto;
+}
+
+@font-face {
+  src: url(../Fonts/Heit3.ttf);
+  font-family: heit;
+}
