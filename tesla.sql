@@ -8,13 +8,20 @@ alter role tesla with login;          -- allow login
 create database tesla owner tesla;     -- create db
 
 -- enter the new db
-\c shop;
+\c tesla;
 
 DROP TABLE IF EXISTS users cascade;
 DROP TABLE IF EXISTS kunde cascade;
-DROP TABLE IF EXISTS vare cascade;
-DROP TABLE IF EXISTS bestilling cascade;
+DROP TABLE IF EXISTS eksemplar cascade;
+DROP TABLE IF EXISTS salg cascade;
 DROP TABLE IF EXISTS linje cascade;
+DROP TABLE IF EXISTS kjoper cascade;
+DROP TABLE IF EXISTS fabrikk cascade;
+DROP TABLE IF EXISTS ymodell cascade;
+DROP TABLE IF EXISTS smodell cascade;
+DROP TABLE IF EXISTS emodell cascade;
+DROP TABLE IF EXISTS xmodell cascade;
+DROP TABLE IF EXISTS cybertruck cascade;
 
 CREATE TABLE "users" (
   "userid" SERIAL PRIMARY KEY,
@@ -102,31 +109,33 @@ CREATE TABLE "salg" (
   "kjoperid" int
 );
 
-ALTER TABLE "users" ADD FOREIGN KEY ("kjoperid") REFERENCES "users" ("kjoperid");
+ALTER TABLE "users" ADD FOREIGN KEY ("kjoperid") REFERENCES "kjoper" ("kjoperid");
 
-ALTER TABLE "fabrikk" ADD FOREIGN KEY ("fabrikkid") REFERENCES "cybertruck" ("fabrikkid");
+ALTER TABLE "cybertruck" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-ALTER TABLE "kjoper" ADD FOREIGN KEY ("kjoperid") REFERENCES "salg" ("kjoperid");
+ALTER TABLE "salg" ADD FOREIGN KEY ("kjoperid") REFERENCES "kjoper" ("kjoperid");
 
-ALTER TABLE "salg" ADD FOREIGN KEY ("salgid") REFERENCES "eksemplar" ("salgid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("salgid") REFERENCES "salg" ("salgid");
 
-ALTER TABLE "cybertruck" ADD FOREIGN KEY ("cybertruckid") REFERENCES "eksemplar" ("cybertruckid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("cybertruckid") REFERENCES "cybertruck" ("cybertruckid");
 
-ALTER TABLE "ymodell" ADD FOREIGN KEY ("ymodellid") REFERENCES "eksemplar" ("ymodellid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("ymodellid") REFERENCES "ymodell" ("ymodellid");
 
-ALTER TABLE "fabrikk" ADD FOREIGN KEY ("fabrikkid") REFERENCES "ymodell" ("fabrikkid");
+ALTER TABLE "ymodell" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-ALTER TABLE "xmodell" ADD FOREIGN KEY ("xmodellid") REFERENCES "eksemplar" ("xmodellid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("xmodellid") REFERENCES "xmodell" ("xmodellid");
 
-ALTER TABLE "fabrikk" ADD FOREIGN KEY ("fabrikkid") REFERENCES "xmodell" ("fabrikkid");
+ALTER TABLE "xmodell" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-ALTER TABLE "emodell" ADD FOREIGN KEY ("emodellid") REFERENCES "eksemplar" ("emodellid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("emodellid") REFERENCES "emodell" ("emodellid");
 
-ALTER TABLE "fabrikk" ADD FOREIGN KEY ("fabrikkid") REFERENCES "emodell" ("fabrikkid");
+ALTER TABLE "emodell" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-ALTER TABLE "smodell" ADD FOREIGN KEY ("smodellid") REFERENCES "eksemplar" ("smodellid");
+ALTER TABLE "eksemplar" ADD FOREIGN KEY ("smodellid") REFERENCES "smodell" ("smodellid");
 
-ALTER TABLE "fabrikk" ADD FOREIGN KEY ("fabrikkid") REFERENCES "smodell" ("fabrikkid");
+ALTER TABLE "smodell" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
+
+
 
 
 alter table users owner to tesla;
