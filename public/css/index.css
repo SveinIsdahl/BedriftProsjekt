@@ -8,3 +8,30 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  font-size: 43px;
+  font-family: roboto;
+  text-align: left;
+  color: white;
+}
+
+.text2 {
+  position: relative;
+  top: 85px;
+  left: 45px;
+  font-size: 43px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
