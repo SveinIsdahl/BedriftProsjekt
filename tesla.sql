@@ -23,21 +23,23 @@ DROP TABLE IF EXISTS emodell cascade;
 DROP TABLE IF EXISTS xmodell cascade;
 DROP TABLE IF EXISTS cybertruck cascade;
 
-CREATE TABLE "users" (
-  "userid" SERIAL PRIMARY KEY,
-  "brukernavn" text NOT NULL,
-  "passord" text,
-  "kjoperid" int
-);
 
-CREATE TABLE "kjoper" (
-  "kjoperid" SERIAL PRIMARY KEY,
+create table users (
+    userid SERIAL PRIMARY KEY,
+    username text unique not null,
+    role text default 'user',
+    password text not null
+); 
+
+CREATE TABLE "kunde" (
+  "kundeid" SERIAL PRIMARY KEY,
   "fornavn" text NOT NULL,
   "etternavn" text NOT NULL,
   "adresse" text,
   "epost" text,
   "tlf" text,
-  "kjonn" text
+  "kjonn" text,
+  "userid" int unique not null
 );
 
 CREATE TABLE "fabrikk" (
@@ -106,14 +108,14 @@ CREATE TABLE "eksemplar" (
 
 CREATE TABLE "salg" (
   "salgid" SERIAL PRIMARY KEY,
-  "kjoperid" int
+  "kundeid" int
 );
 
-ALTER TABLE "users" ADD FOREIGN KEY ("kjoperid") REFERENCES "kjoper" ("kjoperid");
+ALTER TABLE "kunde" ADD FOREIGN KEY ("userid") REFERENCES "users" ("userid");
 
 ALTER TABLE "cybertruck" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-ALTER TABLE "salg" ADD FOREIGN KEY ("kjoperid") REFERENCES "kjoper" ("kjoperid");
+ALTER TABLE "salg" ADD FOREIGN KEY ("kundeid") REFERENCES "kunde" ("kundeid");
 
 ALTER TABLE "eksemplar" ADD FOREIGN KEY ("salgid") REFERENCES "salg" ("salgid");
 
@@ -135,9 +137,6 @@ ALTER TABLE "eksemplar" ADD FOREIGN KEY ("smodellid") REFERENCES "smodell" ("smo
 
 ALTER TABLE "smodell" ADD FOREIGN KEY ("fabrikkid") REFERENCES "fabrikk" ("fabrikkid");
 
-
-
-
 alter table users owner to tesla;
 alter table kjoper owner to tesla;
 alter table fabrikk owner to tesla;
@@ -148,3 +147,8 @@ alter table emodell owner to tesla;
 alter table smodell owner to tesla;
 alter table eksemplar owner to tesla;
 alter table salg owner to tesla;
+
+
+GRANT ALL PRIVILEGES ON TABLE kunde TO tesla
+GRANT ALL PRIVILEGES ON DATABASE tesla TO tesla
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO jerry;
