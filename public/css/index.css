@@ -1,4 +1,10 @@
 .tesla {
-    position: relative;
-    width: 50px;
+  position: relative;
+  width: 50px;
+}
+
+body {
+  background-image: url(../../Bilder/tesla.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
