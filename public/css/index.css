@@ -21,15 +21,8 @@ body {
   left: 65px;
   font-size: 43px;
   font-family: roboto;
-  text-align: center;
-  color: white;
-}
-
-.text2 {
-  position: relative;
-  font-size: 43px;
-  font-family: roboto;
   font-weight: bold;
   text-align: center;
   color: white;
 }
+
