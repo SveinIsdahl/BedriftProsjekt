@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(../../Bilder/modelx.JPG);
+  background-image: url(../Bilder/modelx.JPG);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -42,6 +42,6 @@ body {
 }
 
 @font-face {
-  src: url(../../Fonts/Roboto-Thin.ttf);
+  src: url(../Fonts/Roboto-Thin.ttf);
   font-family: roboto;
 }

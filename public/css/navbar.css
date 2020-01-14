@@ -47,6 +47,6 @@ body {
 }
 
 @font-face {
-  src: url(../../Fonts/Roboto-Light.ttf);
+  src: url(../Fonts/Roboto-Light.ttf);
   font-family: roboto2;
 }
