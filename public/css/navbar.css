@@ -13,7 +13,7 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 18.5px;
-  font-family: verdana;
+  font-family: heit;
 }
 
 .topnav a:hover {
@@ -38,7 +38,7 @@ body {
   font-size: 18.5px;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: verdana;
+  font-family: heit;
 }
 
 .login a:hover {
@@ -47,6 +47,6 @@ body {
 }
 
 @font-face {
-  src: url(../Fonts/Roboto-Light.ttf);
-  font-family: roboto2;
+  src: url(../Fonts/Heit3.ttf);
+  font-family: heit;
 }

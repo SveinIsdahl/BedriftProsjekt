@@ -1,0 +1,41 @@
+body {
+  background-image: url(../Bilder/model3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modelx {
+  width: 100%;
+  min-width: 1200px;
+  orientation: landscape;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.text {
+  position: absolute;
+  top: 65px;
+  left: 110px;
+  font-size: 43px;
+  font-family: roboto;
+  text-align: center;
+}
+
+.text2 {
+  position: absolute;
+  top: 115px;
+  left: 90px;
+  font-size: 43px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+}
+
+@font-face {
+  src: url(../Fonts/Roboto-Thin.ttf);
+  font-family: roboto;
+}

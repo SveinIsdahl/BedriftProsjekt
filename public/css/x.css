@@ -5,15 +5,9 @@
 }
 
 body {
-  background-image: url(../Bilder/modelx.JPG);
+  background-image: url(../Bilder/modelx.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.modelx {
-  width: 100%;
-  min-width: 1200px;
-  orientation: landscape;
 }
 
 .container {
@@ -25,23 +19,30 @@ body {
 .text {
   position: absolute;
   top: 35px;
-  left: 65px;
+  left: 75px;
   font-size: 43px;
   font-family: roboto;
   text-align: center;
+  color: black;
 }
 
 .text2 {
   position: absolute;
   top: 85px;
-  left: 45px;
+  left: 55px;
   font-size: 43px;
   font-family: roboto;
   font-weight: bold;
   text-align: center;
+  color: black;
 }
 
 @font-face {
   src: url(../Fonts/Roboto-Thin.ttf);
   font-family: roboto;
+}
+
+@font-face {
+  src: url(../Fonts/Heit3.ttf);
+  font-family: heit;
 }
