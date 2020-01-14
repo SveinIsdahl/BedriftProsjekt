@@ -17,18 +17,16 @@ body {
 
 .text {
   position: absolute;
-  top: 35px;
+  top: 105px;
   left: 65px;
   font-size: 43px;
   font-family: roboto;
-  text-align: left;
+  text-align: center;
   color: white;
 }
 
 .text2 {
-  position: absolute;
-  top: 85px;
-  left: 45px;
+  position: relative;
   font-size: 43px;
   font-family: roboto;
   font-weight: bold;
