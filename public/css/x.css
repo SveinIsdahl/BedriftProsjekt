@@ -1,6 +1,13 @@
 #bildet {
   position: absolute;
   left: 0;
+  background-image: ;
+}
+
+body {
+  background-image: url(../../Bilder/modelx.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .modelx {
