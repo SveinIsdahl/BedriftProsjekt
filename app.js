@@ -1,5 +1,5 @@
 // @ts-check
-const CONNECTSTRING = "postgres://shop:123@localhost/shop";
+const CONNECTSTRING = "postgres://tesla:123@localhost/tesla";
 const PORT = 3000;
 const express = require("express");
 const pgp = require("pg-promise")();
@@ -48,6 +48,7 @@ async function lagBrukerliste() {
     userlist[userid] = {
       id: userid,
       username: "admin",
+      role:"admin",
       password: umd5("1230")
     };
     _username2id["admin"] = userid;
