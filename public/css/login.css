@@ -1,0 +1,53 @@
+body {
+    background-image: url(../Bilder/teslacockpit.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#main {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 300px;
+    border-radius: 7%;
+    position: absolute;
+    top: 32vh;
+    left: 37vw;
+    border: grey solid 5px;
+}
+
+#logginn {
+    margin-left: 140px;
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#name {
+    margin-top: 10px;
+    margin-left: 45px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5%;
+}
+
+#name label {
+    margin-left: 10px;
+}
+
+#sub {
+    width: 200px;
+    height: 50px;
+    margin-left: 110px;
+    margin-top: 30px;
+    border-radius: 10%;
+    background-color: lightblue;
+}
+
+#password {
+    margin-left: 49px;
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5%;
+}
