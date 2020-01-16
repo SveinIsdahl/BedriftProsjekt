@@ -1,0 +1,5 @@
+{
+  "CONNECTSTRING" : "postgres://tesla:123@localhost/tesla",
+  "PORT" : 3000,
+  "PROJECT" : "tesla"
+}
