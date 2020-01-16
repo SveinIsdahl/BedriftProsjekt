@@ -145,6 +145,6 @@ alter table eksemplar owner to tesla;
 alter table salg owner to tesla;
 
 
-GRANT ALL PRIVILEGES ON TABLE kunde TO tesla
-GRANT ALL PRIVILEGES ON DATABASE tesla TO tesla
+GRANT ALL PRIVILEGES ON TABLE kunde TO tesla;
+GRANT ALL PRIVILEGES ON DATABASE tesla TO tesla;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO tesla;
