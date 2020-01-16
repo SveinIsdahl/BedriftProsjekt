@@ -1,11 +1,5 @@
-#bildet {
-  position: absolute;
-  left: 0;
-  background-image: ;
-}
-
 body {
-  background-image: url(../Bilder/modelx.jpg);
+  background-image: url(../../Bilder/modelx.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
