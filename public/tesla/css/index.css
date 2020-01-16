@@ -26,3 +26,7 @@ body {
   color: white;
 }
 
+@font-face {
+  src: url(../Fonts/Roboto-Thin.ttf);
+  font-family: roboto;
+}
