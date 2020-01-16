@@ -1,5 +1,5 @@
 body {
-    background-image: url(../Bilder/teslacockpit.jpeg);
+    background-image: url(../../Bilder/teslacockpit.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -10,7 +10,7 @@ body {
     width: 400px;
     height: 300px;
     border-radius: 7%;
-    position: absolute;
+    position: fixed;
     top: 32vh;
     left: 37vw;
     border: grey solid 5px;
