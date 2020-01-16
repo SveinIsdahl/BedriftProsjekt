@@ -9,18 +9,24 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../components/DbInsert.js"></script>
     <script src="../components/DbTable.js"></script>
+    <script src="../components/DbUser.js"></script>
+    <script src="../components/DbUpdate.js"></script>
     <link rel="stylesheet" href="../css/shop.css">
 </head>
 
 <body>
     <div id="main">
         <db-table
-         id="table" fields="Tilstand,kmkjørt"
-            sql="select * from smodell">
-            <span slot="caption">Modell S</span>
+         id="table" fields="fornavn,etternavn"
+            sql="select * from kunde">
+            <span slot="caption">Alle kunder</span>
         </db-table>
 
-        
+<!--
+        <db-insert id="form" fields="fornavn,etternavn" foreign="users.userid:username" table="kunde">
+            <span slot="heading">Registrer Kunde</span>
+        </db-insert>
+    -->
     </div>
 
 </body>
