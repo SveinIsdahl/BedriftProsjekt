@@ -1,5 +1,5 @@
 body {
-  background-image: url(../Bilder/models.jpg);
+  background-image: url(../Bilder/models4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,6 +17,7 @@ body {
   font-size: 43px;
   font-family: roboto;
   text-align: center;
+  color: black;
 }
 
 .text2 {
@@ -27,6 +28,7 @@ body {
   font-family: roboto;
   font-weight: bold;
   text-align: center;
+  color: black;
 }
 
 @font-face {

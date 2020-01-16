@@ -1,5 +1,5 @@
 body {
-  background-image: url(../Bilder/model3.jpg);
+  background-image: url(../Bilder/model32.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -18,8 +18,8 @@ body {
 
 .text {
   position: absolute;
-  top: 65px;
-  left: 110px;
+  top: 50px;
+  left: 100px;
   font-size: 43px;
   font-family: roboto;
   text-align: center;
@@ -27,8 +27,8 @@ body {
 
 .text2 {
   position: absolute;
-  top: 115px;
-  left: 90px;
+  top: 100px;
+  left: 80px;
   font-size: 43px;
   font-family: roboto;
   font-weight: bold;
