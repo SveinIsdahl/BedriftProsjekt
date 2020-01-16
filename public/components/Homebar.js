@@ -15,7 +15,7 @@ class HomeBar extends HTMLElement {
         <div id="menu" tabindex="0">
             <i class="material-icons">menu</i>
             <ul>
-              <li data-link="/index">Home</li>
+              <li data-link="../tesla/index">Home</li>
               <slot><li>simple menu</li></slot>
             </ul>
         </div>
