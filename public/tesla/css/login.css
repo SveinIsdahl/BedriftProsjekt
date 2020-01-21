@@ -25,14 +25,10 @@ body {
 
 #name {
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 100px;
     width: 200px;
     height: 30px;
     border-radius: 2rem;
-}
-
-#name label {
-    margin-left: 10px;
 }
 
 #sub {
@@ -45,7 +41,7 @@ body {
 }
 
 #password {
-    margin-left: 49px;
+    margin-left: 100px;
     width: 200px;
     height: 30px;
     margin-top: 10px;
