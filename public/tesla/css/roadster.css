@@ -53,6 +53,7 @@ body {
   font-weight: bold;
   text-align: center;
   color: red;
+  text-decoration: none;
 }
 .bestille:hover {
   transform: scale(1.1);
