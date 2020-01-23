@@ -40,10 +40,3 @@ body {
   src: url(../Fonts/Heit3.ttf);
   font-family: heit;
 }
-
-.bestille {
-  position: absolute;
-  top: 650px;
-  text-align: left;
-  
-}
