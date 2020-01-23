@@ -31,37 +31,6 @@ body {
   color: black;
 }
 
-.bestille {
-  position: absolute;
-  top: 120px;
-  right: 110px;
-}
-
-.bestille a {
-  font-size: 16px;
-  font-family: roboto2;
-  text-align: center;
-  color: black;
-  white-space: nowrap;
-  border: black;
-  border: 2.5px solid black;
-  border-radius: 20px;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.bestille a:visited {
-  text-decoration: none;
-}
-
-.bestille a:hover {
-  color: white;
-  background: black;
-  transition: 0.5s;
-}
-
 @font-face {
   src: url(../Fonts/Roboto-Thin.ttf);
   font-family: roboto;
