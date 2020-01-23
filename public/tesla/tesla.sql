@@ -148,3 +148,4 @@ alter table salg owner to tesla;
 GRANT ALL PRIVILEGES ON TABLE kunde TO tesla;
 GRANT ALL PRIVILEGES ON DATABASE tesla TO tesla;
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO tesla;
+GRANT USAGE, SELECT ON SEQUENCE users_userid_seq TO tesla;
