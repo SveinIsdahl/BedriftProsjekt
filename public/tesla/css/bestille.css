@@ -1,0 +1,27 @@
+.bestille {
+  position: absolute;
+  top: 110px;
+  right: 80px;
+  font-size: 30px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+  border: black;
+  color: black;
+  text-decoration: none;
+}
+
+.bestille:visited {
+  text-decoration: none;
+}
+
+.bestille:hover,
+.bestille:focus {
+  color: black;
+  text-decoration: none;
+}
+
+@font-face {
+  src: url(../Fonts/Roboto-Thin.ttf);
+  font-family: roboto;
+}
