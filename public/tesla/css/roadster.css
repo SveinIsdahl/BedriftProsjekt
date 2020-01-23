@@ -43,6 +43,38 @@ body {
   }
 .bestille {
   position: absolute;
-  top: 650px;
-  
+  top: 600px;
+  left: 60vw;
 }
+
+.bestille a {
+  font-size: 43px;
+  font-family: roboto;
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+.bestille:hover {
+  transform: scale(1.1);
+}
+
+/* unvisited link */
+.bestille:link {
+  color: red;
+}
+
+/* visited link */
+.bestille:visited {
+  color: red;
+}
+
+/* mouse over link */
+.bestille:hover {
+  color: red;
+}
+
+/* selected link */
+.bestille:active {
+  color: red;
+}
+
