@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bestille Model X</title>
+    <link rel="stylesheet" href="../css/roadsterB.css">
+</head>
+<body>
+  <h1>Bestilling</h1>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Faktura adresse</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Fullt navn</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Svein Isdahl">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="sveinisdahl@gmail.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Adresse</label>
+                  <input type="text" id="adr" name="address" placeholder="Nordvegen 2A">
+                  <label for="city"><i class="fa fa-institution"></i> By</label>
+                  <input type="text" id="city" name="city" placeholder="Haugesund">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">Fylke</label>
+                      <input type="text" id="state" name="state" placeholder="Rogaland">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Betaling</h3>
+                  <label for="fname">VISA kort</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Navn på kortet</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Svein Isdahl">
+                  <label for="ccnum">Kredittkort nummer</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Utgår måned</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Utgår år</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Send til faktura adresse
+              </label>
+              <input type="submit" value="Fortsett betaling" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+                <b>4</b>
+              </span>
+            </h4>
+            <p><a href="#">Tesla Model X</a> <span class="price">50 000,- NOK</span></p>
+            <p><a href="#">Levering</a> <span class="price">10 000,- NOK</span></p>
+            <hr>
+            <p>Totalt <span class="price" style="color:black"><b>60 000,- NOK</b></span></p>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
