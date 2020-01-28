@@ -5,7 +5,9 @@
   "OPEN_TABLES": "eksemplar" ,
   "LEVEL3": [
     "select * from eksemplar",
-    "insert into salg"
+    "select eksemplarid from eksemplar order by eksemplarid",
+    "select kundeid,fornavn from  kunde order by fornavn",
+    "insert into salg (dato,eksemplarid,kundeid) values ($[dato],$[eksemplarid],$[kundeid])"
   ],
   "LEVEL2": {
   },
