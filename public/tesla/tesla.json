@@ -1,5 +1,13 @@
 {
   "CONNECTSTRING" : "postgres://tesla:123@localhost/tesla",
   "PORT" : 3000,
-  "PROJECT" : "tesla"
+  "PROJECT": "tesla",
+  "OPEN_TABLES": "eksemplar" ,
+  "LEVEL3": [
+    "select * from eksemplar"
+  ],
+  "LEVEL2": {
+  },
+  "LEVEL1": {
+  }
 }
