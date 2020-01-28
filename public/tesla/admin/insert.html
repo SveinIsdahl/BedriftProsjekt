@@ -22,13 +22,13 @@
     <h1 class=" centered">Registrer Eksemplarer</h1>
         <div id="admin">
             <div class="table">
-                <db-table id="eksemplar" fields="modell,tilstand,kmkjort,pris,longrange,performance"
+                <db-table id="eksemplar" fields="modell,pris,longrange,performance,farge"
                     sql="select * from eksemplar">
                     <span slot="caption">Eksemplarer</span>
                 </db-table>
 
 
-                <db-insert id="eksemplar" fields="tilstand,kmkjort:number,pris:number,longrange:checkbox,performance:checkbox,modell" table="eksemplar" delete="eksemplar">
+                <db-insert id="eksemplar" fields="modell,pris:number,longrange:checkbox,performance:checkbox,farge" table="eksemplar" delete="eksemplar">
                     <span slot="heading">Legg til vare</span>
                 </db-insert>
 

@@ -4,7 +4,8 @@
   "PROJECT": "tesla",
   "OPEN_TABLES": "eksemplar" ,
   "LEVEL3": [
-    "select * from eksemplar"
+    "select * from eksemplar",
+    "select * from eksemplar where salgid != NULL"
   ],
   "LEVEL2": {
   },

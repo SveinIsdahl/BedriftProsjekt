@@ -10,14 +10,7 @@ DROP TABLE IF EXISTS users cascade;
 DROP TABLE IF EXISTS kunde cascade;
 DROP TABLE IF EXISTS eksemplar cascade;
 DROP TABLE IF EXISTS salg cascade;
-DROP TABLE IF EXISTS linje cascade;
-DROP TABLE IF EXISTS kjoper cascade;
-DROP TABLE IF EXISTS fabrikk cascade;
-DROP TABLE IF EXISTS ymodell cascade;
-DROP TABLE IF EXISTS smodell cascade;
-DROP TABLE IF EXISTS emodell cascade;
-DROP TABLE IF EXISTS xmodell cascade;
-DROP TABLE IF EXISTS cybertruck cascade;
+
 
 
 CREATE TABLE "users" (
@@ -40,25 +33,24 @@ CREATE TABLE "kunde" (
 
 CREATE TABLE "eksemplar" (
   "eksemplarid" SERIAL PRIMARY KEY,
-  "tilstand" text,
-  "kmkjort" int,
+  "modell" text not null,
   "pris" int,
   "longrange" boolean,
   "performance" boolean,
-  "modell" text not null,
-  "salgid" int
+  "farge" text
 );
 
 CREATE TABLE "salg" (
-  "salgid" SERIAL PRIMARY KEY,
-  "kundeid" int
+  "salgid" serial PRIMARY KEY,
+  "kundeid" int not null,
+  "eksemplarid" int not null
 );
 
 ALTER TABLE "kunde" ADD FOREIGN KEY ("userid") REFERENCES "users" ("userid");
 
 ALTER TABLE "salg" ADD FOREIGN KEY ("kundeid") REFERENCES "kunde" ("kundeid");
 
-ALTER TABLE "eksemplar" ADD FOREIGN KEY ("salgid") REFERENCES "salg" ("salgid");
+ALTER TABLE "salg" ADD FOREIGN KEY ("eksemplarid") REFERENCES "eksemplar" ("eksemplarid");
 
 alter table users owner to tesla;
 alter table kunde owner to tesla;
