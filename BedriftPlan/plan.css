@@ -1,0 +1,126 @@
+h1, h2 {
+    text-align: center;
+    color: blue;
+}
+
+body {
+    background-color: rgba(190, 230, 190, 0.932);
+}
+
+.deltakere {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+    box-shadow: 1.9px 2.2px;
+}
+
+h2 {
+    position: relative;
+    top: -40px;
+}
+
+.hensikt {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+    box-shadow: 1.9px 2.2px;
+}
+
+.kart {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+    box-shadow: 1.9px 2.2px;
+}
+
+#kart2 {
+    border: 2px solid black;
+    margin: 5px;
+    padding: 14px;
+}
+#index {
+    grid-area: index;
+    background-color: crimson;
+}
+#s {
+    grid-area: s;
+    background-color: aqua;
+}
+#tre {
+    grid-area: tre;
+    background-color: blueviolet;
+}
+#x {
+    grid-area: x;
+    background-color: cornflowerblue;
+}
+#y {
+    grid-area: y;
+    background-color: rgb(110, 194, 105);
+}
+#cybertruck {
+    grid-area: cybertruck;
+    background-color: rgb(131, 82, 92);
+}
+#roadster {
+    grid-area: roadster;
+    background-color: crimson;
+}
+#admin {
+    grid-area: admin;
+    background-color: rgb(216, 130, 147);
+}
+-----------
+
+#bs {
+    grid-area: bs;
+    background-color: blue;
+}
+#btre {
+    grid-area: btre;
+    background-color: red;
+}
+#bx {
+    grid-area: bx;
+    background-color: orange;
+}
+#by {
+    grid-area: by;
+    background-color: black;
+}
+#bcybertruck {
+    grid-area: bcybertruck;
+    background-color: palevioletred;
+}
+#broadster {
+    grid-area: broadster;
+    background-color: blue;
+}
+#insert {
+    grid-area: insert;
+    background-color: red;
+}
+#kart2 {
+    display: grid;
+
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 10px 3vh 3vh;
+  
+    grid-template-areas:
+      ". . . index . . ."
+      "s tre x y cybertruck roadster admin"
+      "bs btre bx by bcybertruck broadster insert"
+
+}
+
+
+.dbdiagram {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+    box-shadow: 1.9px 2.2px;
+}
