@@ -16,13 +16,17 @@
 
 <body>
     <div id="main">
-        <db-table id="eksemplar" fields="modell,pris,longrange,performance,farge"
+        <db-table id="eksemplar" fields="modell,pris:money,longrange,performance,farge"
             sql="select * from eksemplar">
             <span slot="caption">Eksemplarer</span>
         </db-table>
 
 
+
     </div>
+    <db-insert id="form" fields="dato:date" foreign="eksemplar.eksemplarid:eksemplarid, kunde.kundeid:fornavn" table="salg">
+        <span slot="heading">Opprett Salg</span>
+    </db-insert>
 
 </body>
 

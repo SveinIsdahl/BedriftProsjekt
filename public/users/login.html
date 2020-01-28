@@ -9,30 +9,72 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../components/DbInsert.js"></script>
     <script src="../components/DbTable.js"></script>
-   <script src="../components/Homebar.js"></script>
-    <link rel="stylesheet" href="../tesla/css/login.css">
+
+    <style>
+        body {
+            background-image: url(../loginBilde/teslacockpit.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+
+        #main {
+            background-color: whitesmoke;
+            width: 400px;
+            height: 300px;
+            border-radius: 7%;
+            position: fixed;
+            top: 32vh;
+            left: 37vw;
+            border: grey solid 5px;
+        }
+
+        #logginn {
+            margin-left: 130px;
+            margin-top: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+
+        #name {
+            margin-top: 10px;
+            margin-left: 100px;
+            width: 200px;
+            height: 30px;
+            border-radius: 2rem;
+        }
+
+        #sub {
+            width: 220px;
+            height: 50px;
+            margin-left: 95px;
+            margin-top: 30px;
+            border-radius: 2rem;
+            background-color: lightblue;
+        }
+
+        #password {
+            margin-left: 100px;
+            width: 200px;
+            height: 30px;
+            margin-top: 10px;
+            border-radius: 2rem;
+        }
+    </style>
 </head>
 
 <body>
-   <home-bar heading="Nettbutikk" username="/myself">
-    </home-bar>
-
-
     <div id="main">
         <form id="login" action="/login" method="post">
             <div id="logginn">
                 <h1>Logg Inn</h1>
             </div>
             <div>
-                <input id="name" type="text" name="username" placeholder="Email" /><br/>
+                <input id="name" type="text" name="username" placeholder="Email" /><br />
             </div>
             <div>
                 <input id="password" type="password" name="password" placeholder="Passord" />
             </div>
             <div>
-                <input id="sub" type="submit" value="Logg Inn"/>
-            </div
-        </form>
-    </div>
-</body>
-</html>
+                <input id="sub" type="submit" value="Logg Inn" />
+            </div </form> </div> </body> </html>

@@ -5,7 +5,7 @@
   "OPEN_TABLES": "eksemplar" ,
   "LEVEL3": [
     "select * from eksemplar",
-    "select * from eksemplar where salgid != NULL"
+    "insert into salg"
   ],
   "LEVEL2": {
   },

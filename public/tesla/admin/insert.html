@@ -22,7 +22,7 @@
     <h1 class=" centered">Registrer Eksemplarer</h1>
         <div id="admin">
             <div class="table">
-                <db-table id="eksemplar" fields="modell,pris,longrange,performance,farge"
+                <db-table id="eksemplar" fields="modell,pris:money,longrange,performance,farge"
                     sql="select * from eksemplar">
                     <span slot="caption">Eksemplarer</span>
                 </db-table>

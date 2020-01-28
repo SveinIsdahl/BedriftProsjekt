@@ -361,6 +361,11 @@ app.get(`/users/:file`, function(req, res) {
   res.sendFile(__dirname + `/public/users/${file}`);
 });
 
+app.get(`/loginBilde/:file`, function(req, res) {
+  const { file } = req.params;
+  res.sendFile(__dirname + `/public/loginBilde/${file}`);
+});
+
 app.get(`/admin/:file`, Ensure.ensureLoggedIn(), function(req, res) {
   const { file } = req.params;
   res.sendFile(__dirname + `/public/${project}/admin/${file}`);

@@ -42,6 +42,7 @@ CREATE TABLE "eksemplar" (
 
 CREATE TABLE "salg" (
   "salgid" serial PRIMARY KEY,
+  "dato" date,
   "kundeid" int not null,
   "eksemplarid" int not null
 );
