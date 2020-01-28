@@ -1,0 +1,5 @@
+Kunder.html i admin må lages (Ligger mal fra audun der nå) 
+Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
+fikse homebar i login
+
+mer?
