@@ -16,7 +16,7 @@
             }
             td,th {
               border: solid gray 1px;
-              padding: 2px;
+              padding: 3px;
             }
             tr:nth-child(odd) {
               background-color: var(--alternate, lightsteelblue);
@@ -86,8 +86,15 @@
       case "int":
         return { type: "number", value: Math.trunc(+value) };
       case "date":
-        const date = value == null ? "" : value.split("T")[0];
-        return { type, value: date };
+      case "time":
+        if (value == null) {
+          return "";
+        }
+        const now = new Date(value);
+        return { type, value: type === "date" ? now.toJSON().substr(0,10) : now.toTimeString().substr(0,8)};
+      case "time":
+          const time = value == null ? "" : value.split("T")[1].replace('Z','');
+          return { type, value: time };
       default:
         const cleanValue = value === null ? "" : value;
         return { type, value: cleanValue };
@@ -259,6 +266,8 @@
           const leader = this.fieldlist[0].name;
           const selected = Array.from(divBody.querySelectorAll("input:checked"))
             .map(e => e.value)
+            // make it work even if first field is not numeric key
+            .map(e => Number.isInteger(Number(e)) ? Number(e) : `'${e}'`)
             .join(",");
           const sql = `delete from ${table} where ${leader} in (${selected})`;
           const data = {};
