@@ -1,5 +1,15 @@
+Spørringer: 
+Delete og update i insert.html.
+Aggregat spørringer: Antall eksemplarer? Antall solgte? 
+
 Kunder.html i admin må lages (Ligger mal fra audun der nå) 
 Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
 fikse homebar i login
 
+bruke db-list, gjerne med agregatspørringer, liste med stats?
+
 mer?
+Slette urbrukte filer? shop? vareliste?
+
+sv1:
+Ekstra formatting i db-table, farge?
