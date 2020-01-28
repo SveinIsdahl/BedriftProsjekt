@@ -6,6 +6,8 @@ Kunder.html i admin må lages (Ligger mal fra audun der nå)
 Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
 fikse homebar i login
 Legge til sign up, bare link i nav-bar
+Om oss side, har laget begynnelse, skal ha med noen stats om antall ulike eksemplarer som tilbys.
+
 
 
 mer?
@@ -13,4 +15,7 @@ Slette urbrukte filer? shop? vareliste?
 
 sv1:
 Ekstra formatting i db-table, farge? 
-bruke db-list, gjerne med agregatspørringer, stats?
+bruke db-list og db-foreign, gjerne med agregatspørringer, stats?
+
+
+OM vi blir ferdige, legge til ekstra utstyr som et ekstra table for å ha et met komplekst db-diagram.
