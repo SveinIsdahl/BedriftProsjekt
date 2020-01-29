@@ -43,71 +43,113 @@ h2 {
 }
 #index {
     grid-area: index;
-    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #s {
     grid-area: s;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #tre {
     grid-area: tre;
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #x {
     grid-area: x;
-    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #y {
     grid-area: y;
-    background-color: rgb(110, 194, 105);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #cybertruck {
     grid-area: cybertruck;
-    background-color: rgb(131, 82, 92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #roadster {
     grid-area: roadster;
-    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #admin {
     grid-area: admin;
-    background-color: rgb(216, 130, 147);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 
 
 #bs {
     grid-area: bs;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #btre {
     grid-area: btre;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #bx {
     grid-area: bx;
-    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #by {
     grid-area: by;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #bcybertruck {
     grid-area: bcybertruck;
-    background-color: palevioletred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
 #broadster {
     grid-area: broadster;
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
 }
-#insert {
-    grid-area: insert;
-    background-color: red;
-}
+
 #kart2 {
     display: grid;
 
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-rows: 10px 3vh 3vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    grid-gap: 50px;
+    
+    
   
     grid-template-areas:
       ". . . index . . ."
@@ -115,7 +157,6 @@ h2 {
       "bs btre bx by bcybertruck broadster insert"
 
 }
-
 
 .dbdiagram {
     border: black;
