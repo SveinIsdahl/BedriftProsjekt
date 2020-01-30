@@ -11,21 +11,64 @@
     <script src="components/DbTable.js"></script>
     <script src="components/DbUser.js"></script>
     <script src="components/DbUpdate.js"></script>
-    <link rel="stylesheet" href="css/shop.css">
+
 </head>
 
 <body>
+    <h1>Om Tesla</h1>
     <div id="main">
-        <db-list  cssimport="/css/components.css" service="/runsql" sql="select * from kunde">
-
-            <li>
-                <div>
-                    <div>${fornavn}</div>
-                    <div>${etternavn}</div>
-                </div>
-            </li>
-
+        <p>
+            Teslas misjon er å akselerere verdens overgang til bærekraftig energi.
+            Tesla ble grunnlagt i 2003 av en gruppe ingeniører som ønsket å bevise at mennesker ikke trenger å
+            kompromisse for å kjøre elektrisk – at elektriske biler kan være bedre, raskere og morsommere å kjøre enn
+            bensindrevne biler. I dag bygger Tesla ikke bare helelektriske biler, men også svært skalerbare ren
+            energi-generasjons og -lagringsprodukter. Tesla mener at desto raskere verden slutter å være avhengig av
+            fossilt brensel og beveger seg mot en null-utslipps fremtid, desto bedre.
+        </p>
+        <p>
+            I 2008 ble ble Roadster lansert, og avslørte Teslas banebrytende batteri-teknologi og elektriske drivverk.
+            Deretter designet Tesla verdens første premium helelektriske sedan fra grunnen opp – Model S – som har blitt
+            den beste bilen i sin klasse i alle kategorier. Model S kombinerer sikkerhet, ytelse og effektivitet på en
+            måte som har endret verdens forventninger til en bil i det 21. århundret. Med den lengste rekkevidden til
+            noen elektrisk bil, trådløse oppdateringer som gjør bilen bedre over tid, og en akselerasjonstid fra 0-100
+            km/t på bare 2,28 sekunder som målt av Motor Trend. I 2015 utvidet Tesla sin produktlinje med Model X. Den
+            sikreste, raskeste og mest kapable SUV-en i historien, som har 5-stjerners sikkerhetsrangering i alle
+            kategorier testet av National Highway Traffic Administration. For å fullføre CEO Elon Musk sin “Secret
+            Master Plan,” i 2016, introduserte Tesla Model 3, en rimelig elektrisk bil designet for høyt
+            produksjonsvolum. Den gikk i produksjon i 2017. Deretter lanserte Tesla den tryggeste og mest komfortable
+            lastebilen noensinne – Tesla Semi – som er designet for å spare eierne for minst $200,000 i
+            drivstoffkostnader alene, på 1.609.344 km kjørt.
+        </p>
+        <p>
+            Alle Tesla sine kjøretøy produseres ved deres fabrikk i Fremont, California, hvor majoriteten av
+            kjøretøyenes komponenter også produseres. For å oppnå målet vårt om å ha de tryggeste fabrikkene i verden,
+            tar Tesla en proaktiv tilnærming til sikkerhet, herunder krever at produksjonsansatte skal delta i et
+            treningsprogram over flere dager før de får muligheten til å starte arbeidet i fabrikken. Derfra fortsetter
+            Tesla å gi opplæring på jobben og sporer resultatene daglig for å muliggjøre raske forbedringer. Resultatet
+            er at Teslas sikkerhetsrangering forbedres i takt med produksjonen av Model 3.
+        </p>
+        <p>
+            For å opprette et komplett bærekraftig energiøkosystem, produserer Tesla også et unikt sett av
+            energiløsninger, Powerwall, Powerpack og Solar Roof, noe som gir huseiere, bedrifter og nyttemidler
+            muligheten til å administrere fornybar energigenerering, -lagring og -forbruk. Til å støtte Teslas bil- og
+            energiprodukter, er Gigafactory 1 – et anlegg utformet for å betydelig redusere battericellekostnade. Ved å
+            bringe celleproduksjon internt, produserer Tesla batterier av volum nødvendig for å møte produksjonsmål, og
+            samtidig opprettes tusenvis av arbeidsplasser.
+        </p>
+        <p>
+            Dette er bare begynnelsen. Når Tesla nå bygger dens rimeligste bil til dags dato, fortsetter Tesla med å
+            gjøre produkter tilgjengelige og rimelige for flere og flere mennesker, noe som akselererer bruken av ren
+            transport og ren energi-produksjon. Elektriske biler, batterier, og fornybar energigenerering og -lagring
+            eksisterer allerede uavhengig, men sammen så blir de enda sterkere – det er den fremtiden vi ønsker.
+        </p>
+        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from eksemplar">
+            <div id="tall">
+                 Vi tilbyr hele:
+                <span>${count}</span>
+                ulike eksemplarer
+            </div>
         </db-list>
+
     </div>
 
 

@@ -1,10 +1,18 @@
 li {
-    color:green;
+    color:black;
 }
 
-li div { display:flex;} 
+/*li div { display:flex;} 
 li div div { 
     display:inline-flexbox; 
     width: 5em; 
     margin: 4px; 
+}
+*/
+
+#tall {
+    font-size: 2em;
+}
+span {
+    color: blueviolet;
 }
