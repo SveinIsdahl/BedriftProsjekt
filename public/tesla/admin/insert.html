@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../components/DbUser.js"></script>
     <script src="../components/DbInsert.js"></script>
+    <script src="../components/DbUpdate.js"></script>
     <script src="../components/DbList.js"></script>
     <script src="../components/DbForeign.js"></script>
     <script src="../components/DbTable.js"></script>
@@ -18,25 +19,43 @@
 
 <body>
 
-    
+
     <h1 class=" centered">Registrer Eksemplarer</h1>
-        <div id="admin">
-            <div class="table">
-                <db-table id="eksemplar"  fields="eksemplarid,modell,pris:money,longrange:boolean,performance:boolean,farge"
-                    update="eksemplar" delete="eksemplar"
-                    sql="select * from eksemplar">
-                    <span slot="caption">Eksemplarer</span>
-                </db-table>
+    <div id="admin">
+        <div class="table">
+            <db-table id="eksemplar" fields="eksemplarid,modell,pris:money,longrange:boolean,performance:boolean,farge"
+                update="eksemplar" delete="eksemplar" sql="select * from eksemplar">
+                <span slot="caption">Eksemplarer</span>
+            </db-table>
 
 
-                <db-insert id="eksemplar" fields="modell,pris:number,longrange:checkbox,performance:checkbox,farge" table="eksemplar" delete="eksemplar">
-                    <span slot="heading">Legg til vare</span>
-                </db-insert>
+            <db-insert id="eksemplar" fields="modell,pris:number,longrange:checkbox,performance:checkbox,farge"
+                table="eksemplar" delete="eksemplar">
+                <span slot="heading">Legg til vare</span>
+            </db-insert>
 
-
-            </div>
 
         </div>
+
+        <div>
+            <div class="table">
+                <db-table id="table" update="kunde" fields="kundeid:hidden,fornavn,etternavn,adresse,epost,kjonn,tlf"
+                    delete="kunde" sql="select * from kunde">
+                    <span slot="caption">Kunder</span>
+                </db-table>
+            </div>
+
+            <db-insert id="form" fields="fornavn,etternavn,adresse,epost,kjonn,tlf" foreign="users.userid:username" table="kunde">
+                <span slot="heading">Registrer Kunde</span>
+            </db-insert>
+
+            <db-update id="update" key="kundeid" update="true" fields="fornavn,etternavn,adresse,epost,kjonn,tlf"
+                table="kunde">
+                <span slot="heading">Rediger Kunde</span>
+            </db-update>
+
+        </div>
+    </div>
 
 </body>
 
