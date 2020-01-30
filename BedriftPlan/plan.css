@@ -141,6 +141,13 @@ h2 {
     justify-content: center;
     border: 1px solid black;
 }
+#insert {
+    grid-area: insert;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
 
 #kart2 {
     display: grid;
