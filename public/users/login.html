@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="../components/DbInsert.js"></script>
     <script src="../components/DbTable.js"></script>
-
+    <link rel="stylesheet" href="../tesla/css/navbar2.css">
     <style>
         body {
             background-image: url(../loginBilde/teslacockpit.jpeg);
@@ -64,17 +64,33 @@
 </head>
 
 <body>
+
+    <div class="topnav">
+        <a class="active" href="../tesla/index.html">HJEM</a>
+        <a href="../tesla/s.html">MODEL S</a>
+        <a href="../tesla/3.html">MODEL 3</a>
+        <a href="../tesla/x.html">MODEL X</a>
+        <a href="../tesla/y.html">MODEL Y</a>
+        <a href="../tesla/cybertruck.html">CYBERTRUCK</a>
+        <a href="../tesla/roadster.html">ROADSTER</a>
+    </div>
+
     <div id="main">
         <form id="login" action="/login" method="post">
             <div id="logginn">
                 <h1>Logg Inn</h1>
             </div>
             <div>
-                <input id="name" type="text" name="username" placeholder="Email" /><br />
+                <input id="name" type="text" name="username" placeholder="Brukernavn" /><br />
             </div>
             <div>
                 <input id="password" type="password" name="password" placeholder="Passord" />
             </div>
             <div>
                 <input id="sub" type="submit" value="Logg Inn" />
-            </div </form> </div> </body> </html>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
