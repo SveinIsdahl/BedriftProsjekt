@@ -1,13 +1,6 @@
-Spørringer: 
-Update i insert.html.
-Aggregat spørringer: Antall eksemplarer? Antall solgte? 
-
-Kunder.html i admin må lages (Ligger mal fra audun der nå) 
 Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
 Legge til sign up, bare link i nav-bar/login
-Om oss side, har laget begynnelse, skal ha med noen stats om antall ulike eksemplarer som tilbys.
-
-
+Lage omoss.html finere
 
 mer?
 Slette urbrukte filer? shop? vareliste? 
@@ -15,7 +8,6 @@ Slette urbrukte filer? shop? vareliste?
 sv1:
 Ekstra formatting i db-table, farge? 
 bruke db-list og db-foreign, gjerne med agregatspørringer, stats?
-
 
 OM vi blir ferdige, legge til ekstra utstyr som et ekstra table for å ha et met komplekst db-diagram.
 
