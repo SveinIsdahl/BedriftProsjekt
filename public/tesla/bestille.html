@@ -24,7 +24,7 @@
 
 
     </div>
-    <db-insert id="form" fields="dato:date" foreign="eksemplar.eksemplarid:eksemplarid, kunde.kundeid:fornavn" table="salg">
+    <db-insert id="form" fields="dato:date" foreign="eksemplar.eksemplarid:eksemplarid+modell, kunde.kundeid:fornavn+etternavn" table="salg">
         <span slot="heading">Opprett Salg</span>
     </db-insert>
 

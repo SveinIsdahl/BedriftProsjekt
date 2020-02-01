@@ -15,37 +15,60 @@
     <script src="../components/DbTable.js"></script>
     <script src="../components/Homebar.js"></script>
     <link rel="stylesheet" href="../css/admin.css">
+    <style>
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #eksemplarer {
+            padding: 20px;
+        }
+
+        #kunder {
+            padding-right: 100px;
+        }
+
+        #skille {
+            height: 200vh;
+            width: 0px;
+            border: grey solid 2px;
+            position: absolute;
+            top: 0px;
+            right: 50vw;
+        }
+        #tilbake {
+            right: 20px; 
+            position: fixed; 
+            bottom: 0px;
+            border: black solid 2px; 
+            border-radius: 10%; 
+            background-color: gainsboro;
+            padding: 15px;
+
+        }
+    </style>
 </head>
 
 <body>
-
-
-    <h1 class=" centered">Registrer Eksemplarer</h1>
-    <div id="admin">
-        <div class="table">
-            <db-table id="eksemplar" fields="eksemplarid,modell,pris:money,longrange:boolean,performance:boolean,farge"
-                update="eksemplar" delete="eksemplar" sql="select * from eksemplar">
-                <span slot="caption">Eksemplarer</span>
-            </db-table>
-
-
-            <db-insert id="eksemplar" fields="modell,pris:number,longrange:checkbox,performance:checkbox,farge"
-                table="eksemplar" delete="eksemplar">
-                <span slot="heading">Legg til vare</span>
-            </db-insert>
-
-
-        </div>
-
-        <div>
+    <h1 id="tilbake"><a href="../index.html">Tilbake til Hjemsiden</a></h1>
+    <div class="admin">
+        <div id="kunder"><br>
+            <h1 class="centered">Kunder</h1>
             <div class="table">
-                <db-table id="table" update="kunde" fields="kundeid:hidden,fornavn,etternavn,adresse,epost,kjonn,tlf"
-                    delete="kunde" sql="select * from kunde">
+                <db-table id="table" update="kunde" fields="username,kundeid:hidden,fornavn,etternavn,adresse,epost,kjonn,tlf"
+                    delete="kunde" sql="select * from kunde inner join users on (users.userid = kunde.userid)">
                     <span slot="caption">Kunder</span>
                 </db-table>
             </div>
 
-            <db-insert id="form" fields="fornavn,etternavn,adresse,epost,kjonn,tlf" foreign="users.userid:username" table="kunde">
+            <db-insert id="form" fields="fornavn,etternavn,adresse,epost,kjonn,tlf" foreign="users.userid:username"
+                table="kunde">
                 <span slot="heading">Registrer Kunde</span>
             </db-insert>
 
@@ -54,9 +77,30 @@
                 <span slot="heading">Rediger Kunde</span>
             </db-update>
 
-        </div>
-    </div>
+            
 
+        </div>
+        <div id="eksemplarer" class="table">
+            <h1 class="centered">Eksemplarer</h1>
+            <db-table id="eksemplar" fields="eksemplarid,modell,pris:money,longrange:boolean,performance:boolean,farge"
+                update="eksemplar" delete="eksemplar" sql="select * from eksemplar">
+                <span slot="caption">Eksemplarer</span>
+            </db-table>
+
+            <db-insert id="eksemplar" fields="modell,pris:number,longrange:checkbox,performance:checkbox,farge"
+                table="eksemplar" delete="eksemplar">
+                <span slot="heading">Legg til eksemplar</span>
+            </db-insert>
+            <br>
+            <db-table id="salg" fields="salgid,dato:date,fornavn,etternavn,eksemplarid,modell"
+                update="salg" delete="salg" sql="select * from salg inner join kunde on (salg.kundeid = kunde.kundeid) inner join eksemplar on (salg.eksemplarid = eksemplar.eksemplarid)">
+                <span slot="caption">Salg</span>
+            </db-table>
+
+        </div>
+        <div id="skille"></div>
+
+    </div>
 </body>
 
 </html>
