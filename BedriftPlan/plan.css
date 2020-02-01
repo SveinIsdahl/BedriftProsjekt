@@ -152,7 +152,7 @@ h2 {
 #kart2 {
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 60px 60px 60px;
     grid-gap: 50px;
     

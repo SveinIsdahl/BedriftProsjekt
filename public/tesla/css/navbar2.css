@@ -46,6 +46,28 @@ body {
   color: grey;
 }
 
+#signup {
+  width: fit-content;
+  position: absolute;
+  top: 8px;
+  right: 100px;
+}
+
+#signup a {
+  float: left;
+  color: white;
+  font-size: 18.5px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: heit;
+}
+
+#signup a:hover {
+  transform: scale(1.1);
+  color: grey;
+}
+
+
 @font-face {
   src: url(../Fonts/Heit3.ttf);
   font-family: heit;
