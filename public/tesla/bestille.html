@@ -15,15 +15,13 @@
 </head>
 
 <body>
-    <div id="main">
+
         <db-table id="eksemplar" fields="eksemplarid,modell,pris:money,longrange:boolean,performance:boolean,farge"
             sql="select * from eksemplar">
             <span slot="caption">Eksemplarer</span>
         </db-table>
-
-
-
-    </div>
+  
+        
     <db-insert id="form" fields="dato:date" foreign="eksemplar.eksemplarid:eksemplarid+modell, kunde.kundeid:fornavn+etternavn" table="salg">
         <span slot="heading">Opprett Salg</span>
     </db-insert>

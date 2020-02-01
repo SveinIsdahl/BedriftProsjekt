@@ -1,4 +1,4 @@
-Lage bestilling.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
+Lage bestille.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
 Lage omoss.html finere
 Slette urbrukte filer? shop? vareliste? 
 
