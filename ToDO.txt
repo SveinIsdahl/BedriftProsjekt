@@ -1,4 +1,5 @@
 FIKSE TRANSFORAMTION I NAVBAR I INDEX.HTML 3.HTML OG Y.HTML
+ingen forksjell i css utenom black/white, må være i html
 
 Lage bestille.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
 Lage omoss.html finere
