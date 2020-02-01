@@ -30,3 +30,10 @@ body {
   src: url(../Fonts/Roboto-Thin.ttf);
   font-family: roboto;
 }
+#omoss  {
+  bottom: 300px;
+  position: absolute;
+}
+#omoss a:hover {
+  transform: scale(1.1);
+}

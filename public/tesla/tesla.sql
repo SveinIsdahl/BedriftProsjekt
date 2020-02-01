@@ -1,17 +1,13 @@
-
 create role tesla password '123';
 alter role tesla with login;     
 create database tesla owner tesla;    
 
--- enter the new db
 \c tesla;
 
 DROP TABLE IF EXISTS users cascade;
 DROP TABLE IF EXISTS kunde cascade;
 DROP TABLE IF EXISTS eksemplar cascade;
 DROP TABLE IF EXISTS salg cascade;
-
-
 
 CREATE TABLE "users" (
   "userid" SERIAL PRIMARY KEY,
