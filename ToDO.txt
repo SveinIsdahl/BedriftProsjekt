@@ -1,12 +1,6 @@
-Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
+Lage bestilling.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
 Lage omoss.html finere
-
-mer?
 Slette urbrukte filer? shop? vareliste? 
-
-sv1:
-Ekstra formatting i db-table, farge? 
-bruke db-list og db-foreign, gjerne med agregatspørringer, stats?
 
 OM vi blir ferdige, legge til ekstra utstyr som et ekstra table for å ha et met komplekst db-diagram.
 
