@@ -1,5 +1,4 @@
 Lage bestilling.html og insert.html finere (css hovedsakelig, må nok endres i dbcomponents)
-Legge til sign up, bare link i nav-bar/login
 Lage omoss.html finere
 
 mer?
