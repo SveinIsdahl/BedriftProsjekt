@@ -35,5 +35,6 @@ body {
   position: absolute;
 }
 #omoss a:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: rgb(172, 172, 172);
 }

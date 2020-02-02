@@ -8,7 +8,11 @@
     "select eksemplarid from eksemplar order by eksemplarid",
     "select kundeid,fornavn from  kunde order by fornavn",
     "insert into salg (dato,eksemplarid,kundeid) values ($[dato],$[eksemplarid],$[kundeid])",
-    "select count(*) from eksemplar"
+    "select count(*) from eksemplar",
+    "select count(*) from nyhetsbrev",
+    "insert into nyhetsbrev (email) values ($[email])",
+    "select kundeid,fornavn,etternavn from  kunde order by fornavn,etternavn",
+    "select eksemplarid,eksemplarid,modell from eksemplar order by eksemplarid,modell"
   ],
   "LEVEL2": {
   },

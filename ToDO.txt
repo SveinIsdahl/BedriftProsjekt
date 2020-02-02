@@ -1,11 +1,5 @@
-FIKSE TRANSFORAMTION I NAVBAR I INDEX.HTML 3.HTML OG Y.HTML
-ingen forksjell i css utenom black/white, må være i html
-
 Lage bestille.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
-Lage omoss.html finere
-Slette urbrukte filer? shop? vareliste? 
-
-OM vi blir ferdige, legge til ekstra utstyr som et ekstra table for å ha et met komplekst db-diagram.
+Lage omoss.html finere og bedre tekst
 
 pg_dump tesla > dump.sql
 

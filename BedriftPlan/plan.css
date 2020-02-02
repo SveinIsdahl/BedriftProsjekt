@@ -149,19 +149,27 @@ h2 {
     border: 1px solid black;
 }
 
+#omoss {
+    grid-area: omoss;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
 #kart2 {
     display: grid;
 
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 60px 60px 60px;
-    grid-gap: 50px;
+    grid-gap: 40px;
     
     
   
     grid-template-areas:
-      ". . . index . . ."
-      "s tre x y cybertruck roadster admin"
-      "bs btre bx by bcybertruck broadster insert"
+      ". . . index index . . ."
+      "s tre x y cybertruck roadster admin omoss"
+      "bs btre bx by bcybertruck broadster insert ."
 
 }
 

@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="components/DbList.js"></script>
     <script src="components/DbTable.js"></script>
-    <script src="components/DbUser.js"></script>
+    <script src="components/DbInsert.js"></script>
     <script src="components/DbUpdate.js"></script>
 
 </head>
@@ -68,6 +68,16 @@
                 ulike eksemplarer
             </div>
         </db-list>
+        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from nyhetsbrev">
+            <div id="tall">
+                 Det er allerede:
+                <span>${count}</span>
+                personer som har abonnert på tesla-nyhetsbrev! Abonner du også:
+            </div>
+        </db-list> 
+        <db-insert id="form" fields="email" table="nyhetsbrev">
+            <span slot="heading">Abonner</span>
+        </db-insert>
 
     </div>
 

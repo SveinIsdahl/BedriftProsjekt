@@ -4,6 +4,7 @@ create database tesla owner tesla;
 
 \c tesla;
 
+DROP TABLE IF EXISTS nyhetsbrev cascade;
 DROP TABLE IF EXISTS users cascade;
 DROP TABLE IF EXISTS kunde cascade;
 DROP TABLE IF EXISTS eksemplar cascade;
@@ -43,6 +44,11 @@ CREATE TABLE "salg" (
   "eksemplarid" int not null
 );
 
+CREATE TABLE "nyhetsbrev" (
+  "nyhetsbrevid" serial PRIMARY KEY,
+  "email" text
+);
+
 ALTER TABLE "kunde" ADD FOREIGN KEY ("userid") REFERENCES "users" ("userid");
 
 ALTER TABLE "salg" ADD FOREIGN KEY ("kundeid") REFERENCES "kunde" ("kundeid");
@@ -53,6 +59,7 @@ alter table users owner to tesla;
 alter table kunde owner to tesla;
 alter table eksemplar owner to tesla;
 alter table salg owner to tesla;
+alter table nyhetsbrev owner to tesla;
 
 GRANT ALL PRIVILEGES ON TABLE kunde TO tesla;
 GRANT ALL PRIVILEGES ON DATABASE tesla TO tesla;
