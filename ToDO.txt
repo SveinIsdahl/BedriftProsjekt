@@ -1,5 +1,5 @@
 Lage bestille.html finere (css hovedsakelig, må kanskje endres i dbcomponents)
 Lage omoss.html finere og bedre tekst
-
+Slette todo når alt er ferdig
 pg_dump tesla > dump.sql
 
