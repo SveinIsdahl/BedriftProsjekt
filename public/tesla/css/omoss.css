@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(34, 60, 70);
+}
+h2 {
+    text-align: center;
+    font-family: heit;
+    color: whitesmoke;
+}
+.main {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+}
+
+.sql {
+    border: black;
+    margin: 25px;
+    padding: 70px;
+    background-color: white;
+}
