@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/navbar.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+    <div class="topnav">
+      <a class="active" href="index.html">HJEM</a>
+      <a href="s.html">MODEL S</a>
+      <a href="3.html">MODEL 3</a>
+      <a href="x.html">MODEL X</a>
+      <a href="y.html">MODEL Y</a>
+      <a href="cybertruck.html">CYBERTRUCK</a>
+      <a href="roadster.html">ROADSTER</a>
+    </div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">TESLA</h2>
+    <p class="w3-opacity"><i>FREMTIDEN ER NÅ</i></p>
+    <p class="w3-justify">
+        <p>
+            Teslas misjon er å akselerere verdens overgang til bærekraftig energi.
+            Tesla ble grunnlagt i 2003 av en gruppe ingeniører som ønsket å bevise at mennesker ikke trenger å
+            kompromisse for å kjøre elektrisk – at elektriske biler kan være bedre, raskere og morsommere å kjøre enn
+            bensindrevne biler. I dag bygger Tesla ikke bare helelektriske biler, men også svært skalerbare ren
+            energi-generasjons og -lagringsprodukter. Tesla mener at desto raskere verden slutter å være avhengig av
+            fossilt brensel og beveger seg mot en null-utslipps fremtid, desto bedre.
+        </p>
+        <p>
+            I 2008 ble ble Roadster lansert, og avslørte Teslas banebrytende batteri-teknologi og elektriske drivverk.
+            Deretter designet Tesla verdens første premium helelektriske sedan fra grunnen opp – Model S – som har blitt
+            den beste bilen i sin klasse i alle kategorier. Model S kombinerer sikkerhet, ytelse og effektivitet på en
+            måte som har endret verdens forventninger til en bil i det 21. århundret. Med den lengste rekkevidden til
+            noen elektrisk bil, trådløse oppdateringer som gjør bilen bedre over tid, og en akselerasjonstid fra 0-100
+            km/t på bare 2,28 sekunder som målt av Motor Trend. I 2015 utvidet Tesla sin produktlinje med Model X. Den
+            sikreste, raskeste og mest kapable SUV-en i historien, som har 5-stjerners sikkerhetsrangering i alle
+            kategorier testet av National Highway Traffic Administration. For å fullføre CEO Elon Musk sin “Secret
+            Master Plan,” i 2016, introduserte Tesla Model 3, en rimelig elektrisk bil designet for høyt
+            produksjonsvolum. Den gikk i produksjon i 2017. Deretter lanserte Tesla den tryggeste og mest komfortable
+            lastebilen noensinne – Tesla Semi – som er designet for å spare eierne for minst $200,000 i
+            drivstoffkostnader alene, på 1.609.344 km kjørt.
+        </p>
+        <p>
+            Alle Tesla sine kjøretøy produseres ved deres fabrikk i Fremont, California, hvor majoriteten av
+            kjøretøyenes komponenter også produseres. For å oppnå målet vårt om å ha de tryggeste fabrikkene i verden,
+            tar Tesla en proaktiv tilnærming til sikkerhet, herunder krever at produksjonsansatte skal delta i et
+            treningsprogram over flere dager før de får muligheten til å starte arbeidet i fabrikken. Derfra fortsetter
+            Tesla å gi opplæring på jobben og sporer resultatene daglig for å muliggjøre raske forbedringer. Resultatet
+            er at Teslas sikkerhetsrangering forbedres i takt med produksjonen av Model 3.
+        </p>
+        <p>
+            For å opprette et komplett bærekraftig energiøkosystem, produserer Tesla også et unikt sett av
+            energiløsninger, Powerwall, Powerpack og Solar Roof, noe som gir huseiere, bedrifter og nyttemidler
+            muligheten til å administrere fornybar energigenerering, -lagring og -forbruk. Til å støtte Teslas bil- og
+            energiprodukter, er Gigafactory 1 – et anlegg utformet for å betydelig redusere battericellekostnade. Ved å
+            bringe celleproduksjon internt, produserer Tesla batterier av volum nødvendig for å møte produksjonsmål, og
+            samtidig opprettes tusenvis av arbeidsplasser.
+        </p>
+        <p>
+            Dette er bare begynnelsen. Når Tesla nå bygger dens rimeligste bil til dags dato, fortsetter Tesla med å
+            gjøre produkter tilgjengelige og rimelige for flere og flere mennesker, noe som akselererer bruken av ren
+            transport og ren energi-produksjon. Elektriske biler, batterier, og fornybar energigenerering og -lagring
+            eksisterer allerede uavhengig, men sammen så blir de enda sterkere – det er den fremtiden vi ønsker.
+        </p>
+        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from eksemplar">
+            <div id="tall">
+                 Vi tilbyr hele:
+                <span>${count}</span>
+                ulike eksemplarer
+            </div>
+        </db-list>
+        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from nyhetsbrev">
+            <div id="tall">
+                 Det er allerede:
+                <span>${count}</span>
+                personer som har abonnert på tesla-nyhetsbrev! Abonner du også:
+            </div>
+        </db-list> 
+        <db-insert id="form" fields="email" table="nyhetsbrev">
+            <span slot="heading">Abonner</span>
+        </db-insert>
+  </div>
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">KONTAKT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> HAUGESUND<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +47 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
