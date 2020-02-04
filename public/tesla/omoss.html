@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Om oss</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
     <script src="components/DbList.js"></script>
     <script src="components/DbTable.js"></script>
     <script src="components/DbInsert.js"></script>
     <script src="components/DbUpdate.js"></script>
-
+    <link rel="stylesheet" href="css/navbar2.css">
+    <link rel="stylesheet" href="css/omoss.css">
 </head>
 
 <body>
-    <h1>Om Tesla</h1>
-    <div id="main">
+    <div class="topnav">
+        <a class="active" href="index.html">HJEM</a>
+        <a href="s.html">MODEL S</a>
+        <a href="3.html">MODEL 3</a>
+        <a href="x.html">MODEL X</a>
+        <a href="y.html">MODEL Y</a>
+        <a href="cybertruck.html">CYBERTRUCK</a>
+        <a href="roadster.html">ROADSTER</a>
+    </div>
+    <div>
+        <h2>OM OSS</h2>
+        <div class="main">
         <p>
-            <h2>Teslas misjon er å akselerere verdens overgang til bærekraftig energi.</h2>
+            <h3>Teslas misjon er å akselerere verdens overgang til bærekraftig energi.</h3>
             Tesla ble grunnlagt i 2003 av en gruppe ingeniører som ønsket å bevise at mennesker ikke trenger å
             kompromisse for å kjøre elektrisk – at elektriske biler kan være bedre, raskere og morsommere å kjøre enn
             bensindrevne biler. I dag bygger Tesla ikke bare helelektriske biler, men også svært skalerbare ren
@@ -61,27 +71,28 @@
             transport og ren energi-produksjon. Elektriske biler, batterier, og fornybar energigenerering og -lagring
             eksisterer allerede uavhengig, men sammen så blir de enda sterkere – det er den fremtiden vi ønsker.
         </p>
-        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from eksemplar">
-            <div id="tall">
-                 Vi tilbyr hele:
-                <span>${count}</span>
-                ulike eksemplarer
-            </div>
-        </db-list>
-        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from nyhetsbrev">
-            <div id="tall">
-                 Det er allerede:
-                <span>${count}</span>
-                personer som har abonnert på tesla-nyhetsbrev! Abonner du også:
-            </div>
-        </db-list> 
-        <db-insert id="form" fields="email" table="nyhetsbrev">
-            <span slot="heading">Abonner</span>
-        </db-insert>
-
     </div>
-
-
+    </div>
+    <div class="sql">
+    <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from eksemplar">
+        <div id="tall">
+             Vi tilbyr hele:
+            <span>${count}</span>
+            ulike eksemplarer
+        </div>
+    </db-list>
+    
+        <db-list cssimport="/css/components.css" service="/runsql" sql="select count(*) from nyhetsbrev">
+        <div id="tall">
+             Det er allerede:
+            <span>${count}</span>
+            personer som har abonnert på tesla-nyhetsbrev! Abonner du også:
+        </div>
+    </db-list> 
+    <db-insert id="form" fields="email" table="nyhetsbrev">
+        <span slot="heading">Abonner</span>
+    </db-insert>
+</div>
 </body>
 
 </html>

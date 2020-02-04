@@ -267,6 +267,7 @@ COPY public.kunde (kundeid, fornavn, etternavn, adresse, epost, tlf, kjonn, user
 COPY public.nyhetsbrev (nyhetsbrevid, email) FROM stdin;
 1	gegn@egng.com
 2	epost@gmail.com
+4	epost@epost.com
 \.
 
 
@@ -307,7 +308,7 @@ SELECT pg_catalog.setval('public.kunde_kundeid_seq', 1, true);
 -- Name: nyhetsbrev_nyhetsbrevid_seq; Type: SEQUENCE SET; Schema: public; Owner: tesla
 --
 
-SELECT pg_catalog.setval('public.nyhetsbrev_nyhetsbrevid_seq', 3, true);
+SELECT pg_catalog.setval('public.nyhetsbrev_nyhetsbrevid_seq', 4, true);
 
 
 --
